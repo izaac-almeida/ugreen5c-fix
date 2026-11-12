@@ -18,7 +18,7 @@ Automação em Bash + systemd para conectar e configurar automaticamente o heads
 ## Instalação
 
 ```bash
-git clone [https://github.com/izaac-almeida/ugreen5c-fix.git](https://github.com/izaac-almeida/ugreen5c-fix.git)
+git clone https://github.com/izaac-almeida/ugreen5c-fix.git
 cd ugreen5c-fix
 chmod +x install.sh
 ./install.sh
