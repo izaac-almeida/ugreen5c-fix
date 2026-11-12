@@ -1,7 +1,6 @@
-cat << 'EOF' > README.md
 # UGREEN HiTune Max5c Auto-Config (CachyOS / Arch Linux)
 
-Automação em Bash + systemd para conectar e configurar automaticamente o headset **UGREEN HiTune Max5c** no Linux utilizando o [ugreenapp](https://github.com/izaac-almeida/ugreen5c-fix.git
+Automação em Bash + systemd para conectar e configurar automaticamente o headset **UGREEN HiTune Max5c** no Linux utilizando o [ugreenapp](https://github.com/dustincorder/ugreenapp).
 
 ## O que este script faz
 1. Instala as dependências (`rust`, `bluez`, `bluez-utils`, `base-devel`) e compila o `ugreen_core`.
@@ -19,7 +18,19 @@ Automação em Bash + systemd para conectar e configurar automaticamente o heads
 ## Instalação
 
 ```bash
-git clone [https://github.com/izaac-almeida/ugreen5c-fix.git
+git clone [https://github.com/izaac-almeida/ugreen5c-fix.git](https://github.com/izaac-almeida/ugreen5c-fix.git)
 cd ugreen5c-fix
 chmod +x install.sh
 ./install.sh
+```
+
+## Uso manual
+Para aplicar as configurações a qualquer momento pelo terminal:
+```bash
+fone
+```
+
+Para verificar o status do serviço automático:
+```bash
+systemctl --user status ugreen-auto.service
+```
